@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* 糖果风柔和渐变背景 */
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e8ff 50%, #fce7f3 100%);
+  color: #1e293b; /* slate-800 */
+  min-height: 100vh;
+  /* 优化移动端点击高亮颜色 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 自定义滚动条，保持页面整洁 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 10px;
+}
